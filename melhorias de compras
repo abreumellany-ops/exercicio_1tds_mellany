@@ -1,0 +1,40 @@
+#include <stdio.h>
+int dinheiro;
+int cascos;
+ 
+ int main(){
+     //entrada de dados com validaçao
+     printf("Digite quanto de dinheiro voce tem:\n");
+     scanf("%d", &dinheiro);
+     if (dinheiro< 0){
+         printf("valor invalido! Dinheiro nao pode ser negativo.\n");
+         return 1;
+     }
+     
+     printf("Digite quantos cascos voce tem:\n");
+     scanf("%d", &cascos);
+     
+     if (cascos < 0) {
+        printf("valor invalido! Cascos nao podem ser negativos.\n");
+        return 1;
+     }
+      //2 logica principal simplificada e clara
+       if (dinheiro >= 8 &cascos >=1){
+           printf("Voce comprou!.\n");
+        }
+        else if (dinheiro <8 &cascos >=1){
+        printf("Voce nao tem dinheiro suficiente\n");
+     }
+      else if (dinheiro >= 8 &cascos <=1){
+     printf ("Voce nao tem casco suficiente\n");
+      
+     } else{
+          printf("Voce nao conseguiu comparar\n");
+         }
+         
+         //mensagens de encerramento
+     printf("\nObrigada por comprar conosco!\n");
+     return 0;
+     
+     
+ }
